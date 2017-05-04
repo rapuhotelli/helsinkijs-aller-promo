@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>HelsinkiJS May 2017 @ Aller</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
@@ -18,6 +18,9 @@
         <h1 class="splash-head">HelsinkiJS @ Aller</h1>
         <p class="splash-subhead">
             Tuesday 23rd of May, 2017
+        </p>
+        <p class="splash-subhead">
+            Sign up open!
         </p>
     </div>
 </div>
@@ -59,15 +62,8 @@
     </div>
 
     <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-        <iframe class="maps-sw-iframe" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sfi!4v1493814954885!6m8!1m7!1sqRanSjo3E0aeQPfLnUGLgQ!2m2!1d60.15844176311543!2d24.93404889348179!3f338.1381511058824!4f-10.199142777696423!5f0.7820865974627469"
-          width="100%" 
-          height="350" 
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+        <div class="pure-u-md-1-5"></div>
+        <div class="pure-u-1 pure-u-md-3-5">
             <h2 class="content-head content-head-ribbon">How to get there.</h2>
             <p>
               The event will be held at Aller in Punavuori. Tram 1A takes you right to the front door, or you may take the tram 6 to the end of Bulevardi and walk 500 meters past Nosturi.
@@ -78,18 +74,55 @@
                 </ul>
             </p>
         </div>
+        <div class="pure-u-md-1-5"></div>
+
+        <div class="l-box-lrg is-center pure-u-1">
+        <style>
+
+        
+        </style>
+          <div id="map" class="pure-u-1 pure-u-md-1-2"></div><div id="pano" class="pure-u-1 pure-u-md-1-2"></div>
+          <script>
+            function initialize() {
+              var pos = {lat: 60.1584418, lng: 24.9340489};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                center: pos,
+                zoom: 14,
+                scrollwheel: false
+              });
+              var panorama = new google.maps.StreetViewPanorama(
+                  document.getElementById('pano'), {
+                    position: pos,
+                    pov: {
+                      heading: 334,
+                      pitch: 5
+                    },
+                    motionTracking: false,
+                    scrollwheel: false
+                  });
+              map.setStreetView(panorama);
+            }
+          </script>
+          <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGi0-xQ5-kaEMJgGrP87qfLg-lAl9duVA&callback=initialize">
+          </script>
+
+        </div>
+
     </div>
 
     <div class="content beige-bg">
-        <h2 class="content-head is-center">Sign up</h2>
+        <h2 class="content-head is-center">Sign up!</h2>
 
         <div class="pure-g">
             <div class="l-box-lrg pure-u-1 pure-u-md-1-5">
             </div>
 
             <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-              <h4>Participation</h4>
-              <a href="https://meetabit.com/events/helsinkijs-may-2017">HelsinkiJS May 2017 @ Meetabit</a>
+              <h2>Participation</h2>
+              <p>
+                To attend you must sign yourself up at the <a href="https://meetabit.com/events/helsinkijs-may-2017">HelsinkiJS May 2017</a> Meetabit page. Sign up before we're full!
+              </p>
               <h4>Wanna talk about your work?</h4>
               <p>
                 Go to the HelsinkiJS 
