@@ -1,0 +1,19 @@
+{
+  "name": "helsinkijs-aller-promo",
+  "version": "1.0.0",
+  "description": "Static swag for HelsinkiJS",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rapuhotelli/helsinkijs-aller-promo.git"
+  },
+  "author": "rapuhotelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rapuhotelli/helsinkijs-aller-promo/issues"
+  },
+  "homepage": "https://github.com/rapuhotelli/helsinkijs-aller-promo#readme"
+}
